@@ -10,17 +10,27 @@
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_bullet</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_stars</background>
+    <background>background\bg_grid_lg</background>
+    <background>background\bg_grid_md</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\obj_player_step.gml</script>
-    <script>scripts\obj_bullet_init.gml</script>
-    <script>scripts\obj_bullet_step.gml</script>
-    <script>scripts\obj_bullet_draw.gml</script>
-    <script>scripts\obj_player_init.gml</script>
-    <script>scripts\obj_enemy_init.gml</script>
-    <script>scripts\obj_enemy_step.gml</script>
-    <script>scripts\obj_enemy_bullet_collision.gml</script>
+    <scripts name="player">
+      <script>scripts\obj_player_init.gml</script>
+      <script>scripts\obj_player_step.gml</script>
+    </scripts>
+    <scripts name="bullet">
+      <script>scripts\obj_bullet_draw.gml</script>
+      <script>scripts\obj_bullet_init.gml</script>
+      <script>scripts\obj_bullet_step.gml</script>
+    </scripts>
+    <scripts name="enemy">
+      <script>scripts\obj_enemy_init.gml</script>
+      <script>scripts\obj_enemy_bullet_collision.gml</script>
+      <script>scripts\obj_enemy_step.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>

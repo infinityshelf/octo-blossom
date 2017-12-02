@@ -5,3 +5,5 @@ xaccel = 5
 yaccel = 5
 
 maxspeed = 6
+
+image_speed = 1/5
