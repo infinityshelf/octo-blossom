@@ -21,3 +21,14 @@ if (dot > maxspeed) {
 x += xspeed
 y += yspeed
 
+move_direction = point_direction(xprevious, yprevious, x, y)
+image_angle = move_direction
+
+if (mouse_check_button_pressed(mb_left)) {
+    var inst = instance_create(x,y,obj_bullet);
+    with (inst) {
+        dir = -degtorad(point_direction(x,y,mouse_x,mouse_y))
+        xspeed = cos(dir) * maxspeed
+        yspeed = sin(dir) * maxspeed
+    }
+}
