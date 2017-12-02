@@ -26,11 +26,14 @@ if (x != xprevious) or (y != yprevious) {
     image_angle = move_direction
 }
 
-if (mouse_check_button_pressed(mb_left)) {
-    var inst = instance_create(x,y,obj_bullet);
-    with (inst) {
-        dir = -degtorad(point_direction(x,y,mouse_x,mouse_y))
-        xspeed = cos(dir) * maxspeed
-        yspeed = sin(dir) * maxspeed
+if (mouse_check_button(mb_left)) {
+    if ((press_counter % shootspeed) == 0) {
+        var inst = instance_create(x,y,obj_bullet);
+        with (inst) {
+            dir = -degtorad(point_direction(x,y,mouse_x,mouse_y))
+            xspeed = cos(dir) * maxspeed + other.xspeed
+            yspeed = sin(dir) * maxspeed + other.yspeed
+        }
     }
+    press_counter += 1;
 }
