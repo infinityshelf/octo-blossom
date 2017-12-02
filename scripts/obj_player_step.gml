@@ -9,8 +9,8 @@ var iny = down - up;
 xspeed *= friction
 yspeed *= friction
 
-xspeed += inx * maxspeed
-yspeed += iny * maxspeed
+xspeed += inx * xaccel
+yspeed += iny * yaccel
 
 var dot = sqrt(dot_product(xspeed,yspeed,xspeed,yspeed))
 if (dot > maxspeed) {
