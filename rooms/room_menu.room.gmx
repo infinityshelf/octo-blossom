@@ -56,6 +56,7 @@
     <instance objName="obj_menu_button" x="256" y="384" name="inst_EADA877F" locked="0" code="self.button_title = &quot;PURCHASE&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_button" x="480" y="384" name="inst_E9C624CA" locked="0" code="self.button_title = &quot;NEXT &gt;&gt;&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_button" x="32" y="32" name="inst_40F2A9B7" locked="0" code="self.button_title = &quot;BACK&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu_button" x="480" y="32" name="inst_BD843064" locked="0" code="self.button_title = &quot;EXIT GAME&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

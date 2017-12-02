@@ -35,6 +35,11 @@
       <script>scripts\obj_enemy_bullet_collision.gml</script>
       <script>scripts\obj_enemy_step.gml</script>
     </scripts>
+    <scripts name="menu">
+      <script>scripts\scr_menu_button_step.gml</script>
+      <script>scripts\scr_menu_button_init.gml</script>
+      <script>scripts\scr_menu_button_draw.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
