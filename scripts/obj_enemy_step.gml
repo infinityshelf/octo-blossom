@@ -8,3 +8,7 @@ yspeed += sin(dir) * yaccel
 
 x += xspeed
 y += yspeed
+
+if (x != xprevious) or (y != yprevious) {
+    image_angle = point_direction(xprevious,yprevious,x,y)
+}
