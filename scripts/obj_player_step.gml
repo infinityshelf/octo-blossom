@@ -29,14 +29,33 @@ if (x != xprevious) or (y != yprevious) {
     image_angle = move_direction
 }
 
-if (mouse_check_button(mb_left)) {
+if (mouse_check_button_pressed(mb_left)) {
+    should_fire = true
+}
+
+// if mouse is held, attempt to shoot. gun may still be on cooldown, but the cooldown should expire after some time
+if (mouse_check_button(mb_left) or should_fire) {
     if ((press_counter % shootspeed) == 0) {
+        press_counter = 0
         var inst = instance_create(x,y,obj_bullet);
         with (inst) {
             dir = -degtorad(point_direction(x,y,mouse_x,mouse_y))
             xspeed = cos(dir) * maxspeed + other.xspeed
             yspeed = sin(dir) * maxspeed + other.yspeed
         }
+        should_fire = false
     }
     press_counter += 1;
+} else if (press_counter != 0) {
+    // mouse not held, and press counter isnt 0
+    press_counter += 1
+    if ((press_counter % shootspeed) == 0) {
+        press_counter = 0
+        /*var inst = instance_create(x,y,obj_bullet);
+        with (inst) {
+            dir = -degtorad(point_direction(x,y,mouse_x,mouse_y))
+            xspeed = cos(dir) * maxspeed + other.xspeed
+            yspeed = sin(dir) * maxspeed + other.yspeed
+        }*/
+    }
 }
