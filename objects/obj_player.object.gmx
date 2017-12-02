@@ -67,7 +67,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>obj_player_sprite_rotation</script>
+            <script>obj_player_movement</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -107,7 +107,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>obj_player_movement</script>
+            <script>obj_player_sprite_rotation</script>
           </argument>
           <argument>
             <kind>0</kind>
