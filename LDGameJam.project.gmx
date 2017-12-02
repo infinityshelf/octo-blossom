@@ -12,6 +12,8 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\obj_player_sprite_rotation.gml</script>
+    <script>scripts\obj_player_init.gml</script>
+    <script>scripts\obj_player_movement.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
