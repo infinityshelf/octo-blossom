@@ -37,3 +37,7 @@ if (mouse_check_button(mb_left)) {
     }
     press_counter += 1;
 }
+
+if keyboard_check_pressed(vk_escape) {
+    room_goto_next()
+}
