@@ -1,1 +1,1 @@
-maxspeed = 50
+maxspeed = 15

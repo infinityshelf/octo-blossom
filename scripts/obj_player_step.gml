@@ -22,7 +22,9 @@ x += xspeed
 y += yspeed
 
 move_direction = point_direction(xprevious, yprevious, x, y)
-image_angle = move_direction
+if (x != xprevious) or (y != yprevious) {
+    image_angle = move_direction
+}
 
 if (mouse_check_button_pressed(mb_left)) {
     var inst = instance_create(x,y,obj_bullet);

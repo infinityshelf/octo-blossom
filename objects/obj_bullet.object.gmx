@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>obj_player_init</script>
+            <script>obj_bullet_init</script>
           </argument>
           <argument>
             <kind>0</kind>
