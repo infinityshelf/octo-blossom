@@ -20,6 +20,7 @@
     <scripts name="player">
       <script>scripts\obj_player_init.gml</script>
       <script>scripts\obj_player_step.gml</script>
+      <script>scripts\obj_player_draw.gml</script>
     </scripts>
     <scripts name="bullet">
       <script>scripts\obj_bullet_draw.gml</script>
