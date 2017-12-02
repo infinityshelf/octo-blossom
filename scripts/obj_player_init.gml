@@ -6,7 +6,7 @@ yspeed = 0
 xaccel = 3
 yaccel = 3
 
-maxspeed = 6
+maxspeed = 5
 
 image_speed = 1/5
 shootspeed = 10

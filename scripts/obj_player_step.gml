@@ -6,18 +6,23 @@ var right = keyboard_check(vk_right) or keyboard_check(ord("D"));
 var inx = right - left;
 var iny = down - up;
 
-xspeed *= friction
-yspeed *= friction
+if (inx == 0) {
+    xspeed *= friction
+}
+if (iny == 0) {
+    yspeed *= friction
+}
 
 xspeed += inx * xaccel
 yspeed += iny * yaccel
 
 var dot = sqrt(dot_product(xspeed,yspeed,xspeed,yspeed))
+show_debug_message(string(dot))
 if (dot > maxspeed) {
     xspeed *= maxspeed/dot
     yspeed *= maxspeed/dot
 }
-
+show_debug_message(string(xspeed) + string(yspeed))
 x += xspeed
 y += yspeed
 
