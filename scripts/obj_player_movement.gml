@@ -17,3 +17,4 @@ if (keyboard_check(vk_right) or keyboard_check(ord("D"))) {
 x += xspeed
 y += yspeed
 
+
