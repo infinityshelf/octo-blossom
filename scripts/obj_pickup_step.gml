@@ -1,5 +1,5 @@
-// update once every 5 frames
-if (update_counter >= 5) {
+// update once every 2 frames
+if (update_counter >= 2) {
     update_counter = 0
     // do update
     xspeed *= friction
