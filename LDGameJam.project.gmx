@@ -19,7 +19,8 @@
     <script>scripts\obj_player_sprite_rotation.gml</script>
     <script>scripts\obj_player_init.gml</script>
     <script>scripts\obj_player_movement.gml</script>
-    <script>scripts\scr_music.gml</script>
+    <script>scripts\scr_music_init.gml</script>
+    <script>scripts\scr_music_step.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
