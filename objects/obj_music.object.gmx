@@ -67,7 +67,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>-1</script>
+            <script>scr_music_step</script>
           </argument>
           <argument>
             <kind>0</kind>
