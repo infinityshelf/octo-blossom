@@ -10,6 +10,8 @@
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_enemy</sprite>
     <sprite>sprites\spr_bullet</sprite>
+    <sprite>sprites\spr_reticle</sprite>
+    <sprite>sprites\spr_menu_button</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_stars</background>
@@ -33,14 +35,25 @@
       <script>scripts\obj_enemy_step.gml</script>
       <script>scripts\obj_enemy_bullet_collision.gml</script>
     </scripts>
+    <scripts name="menu">
+      <script>scripts\scr_menu_button_step.gml</script>
+      <script>scripts\scr_menu_button_init.gml</script>
+      <script>scripts\scr_menu_button_draw.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_bullet</object>
+    <object>objects\obj_reticle</object>
+    <objects name="Menu">
+      <object>objects\obj_menu</object>
+      <object>objects\obj_menu_button</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
