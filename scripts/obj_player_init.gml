@@ -12,3 +12,5 @@ shootspeed = 10
 should_fire = false
 press_counter = 0
 global.difficulty = cr;
+
+loss_counter = 0
