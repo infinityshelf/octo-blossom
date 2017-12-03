@@ -42,8 +42,8 @@ if (mouse_check_button(mb_left) or should_fire) {
         var inst = instance_create(x,y,obj_bullet);
         with (inst) {
             dir = -degtorad(point_direction(x,y,mouse_x,mouse_y))
-            xspeed = cos(dir) * maxspeed + other.xspeed
-            yspeed = sin(dir) * maxspeed + other.yspeed
+            xspeed = cos(dir) * maxspeed// + other.xspeed
+            yspeed = sin(dir) * maxspeed// + other.yspeed
         }
         should_fire = false
     }
@@ -63,3 +63,8 @@ if (mouse_check_button(mb_left) or should_fire) {
 }
 
 global.difficulty = cr;
+
+if keyboard_check_pressed(vk_escape) {
+    room_goto_next()
+}
+
