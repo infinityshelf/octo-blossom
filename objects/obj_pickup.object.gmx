@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>obj_bullet_init</script>
+            <script>obj_pickup_init</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -67,7 +67,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>obj_bullet_step</script>
+            <script>obj_pickup_step</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -109,7 +109,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>obj_bullet_draw</script>
+            <script>obj_pickup_draw</script>
           </argument>
           <argument>
             <kind>0</kind>

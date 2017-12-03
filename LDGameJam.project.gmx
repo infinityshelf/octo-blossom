@@ -24,6 +24,8 @@
       <script>scripts\obj_player_init.gml</script>
       <script>scripts\obj_player_step.gml</script>
       <script>scripts\obj_player_draw.gml</script>
+      <script>scripts\obj_player_enemy_collision.gml</script>
+      <script>scripts\obj_player_pickup_collision.gml</script>
     </scripts>
     <scripts name="bullet">
       <script>scripts\obj_bullet_draw.gml</script>
@@ -32,9 +34,17 @@
     </scripts>
     <scripts name="enemy">
       <script>scripts\obj_enemy_init.gml</script>
+      <script>scripts\obj_enemy_destroy.gml</script>
       <script>scripts\obj_enemy_step.gml</script>
       <script>scripts\obj_enemy_bullet_collision.gml</script>
     </scripts>
+    <scripts name="pickup">
+      <script>scripts\obj_pickup_init.gml</script>
+      <script>scripts\obj_pickup_step.gml</script>
+      <script>scripts\obj_pickup_draw.gml</script>
+    </scripts>
+    <script>scripts\obj_enemy_spawner_step.gml</script>
+    <script>scripts\obj_enemy_spawner_init.gml</script>
     <scripts name="menu">
       <script>scripts\scr_menu_button_step.gml</script>
       <script>scripts\scr_menu_button_init.gml</script>
@@ -45,6 +55,8 @@
     <object>objects\obj_player</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_bullet</object>
+    <object>objects\obj_pickup</object>
+    <object>objects\obj_enemy_spawner</object>
     <object>objects\obj_reticle</object>
     <objects name="Menu">
       <object>objects\obj_menu</object>
