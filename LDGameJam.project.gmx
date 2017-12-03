@@ -4,7 +4,11 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound_theme_0</sound>
+    <sound>sound\sound_theme_1</sound>
+    <sound>sound\sound_theme_2</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player_flash</sprite>
     <sprite>sprites\spr_player</sprite>
@@ -20,6 +24,8 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\scr_music_init.gml</script>
+    <script>scripts\scr_music_step.gml</script>
     <scripts name="player">
       <script>scripts\obj_player_init.gml</script>
       <script>scripts\obj_player_step.gml</script>
@@ -58,6 +64,7 @@
     <object>objects\obj_pickup</object>
     <object>objects\obj_enemy_spawner</object>
     <object>objects\obj_reticle</object>
+    <object>objects\obj_music</object>
     <objects name="Menu">
       <object>objects\obj_menu</object>
       <object>objects\obj_menu_button</object>
