@@ -21,6 +21,7 @@ if (dot > maxspeed) {
     xspeed *= maxspeed/dot
     yspeed *= maxspeed/dot
 }
+
 x += xspeed
 y += yspeed
 
@@ -29,6 +30,7 @@ if (x != xprevious) or (y != yprevious) {
     image_angle = move_direction
 }
 
+// should_fire flag helps when the player is pressing the button quickly. a single press should fire a single bullet.
 if (mouse_check_button_pressed(mb_left)) {
     should_fire = true
 }
@@ -59,3 +61,5 @@ if (mouse_check_button(mb_left) or should_fire) {
         }*/
     }
 }
+
+global.difficulty = cr;
