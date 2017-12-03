@@ -9,3 +9,7 @@ if (update_counter >= 2) {
 } else {
     update_counter += 1
 }
+
+lifespan -= 1
+if lifespan == 0
+    instance_destroy(self)
