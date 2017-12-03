@@ -2,10 +2,10 @@ cr = 0
 xspeed = 0
 yspeed = 0
 
-xaccel = 3
-yaccel = 3
+xaccel = 4
+yaccel = 4
 
-maxspeed = 5
+maxspeed = 7
 
 image_speed = 1/5
 shootspeed = 10
