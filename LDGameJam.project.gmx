@@ -12,22 +12,55 @@
   <sprites name="sprites">
     <sprite>sprites\spr_player_flash</sprite>
     <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_enemy</sprite>
+    <sprite>sprites\spr_bullet</sprite>
+    <sprite>sprites\spr_reticle</sprite>
+    <sprite>sprites\spr_menu_button</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_stars</background>
+    <background>background\bg_grid_lg</background>
+    <background>background\bg_grid_md</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\obj_player_sprite_rotation.gml</script>
-    <script>scripts\obj_player_init.gml</script>
-    <script>scripts\obj_player_movement.gml</script>
     <script>scripts\scr_music_init.gml</script>
     <script>scripts\scr_music_step.gml</script>
+    <scripts name="player">
+      <script>scripts\obj_player_init.gml</script>
+      <script>scripts\obj_player_step.gml</script>
+      <script>scripts\obj_player_draw.gml</script>
+    </scripts>
+    <scripts name="bullet">
+      <script>scripts\obj_bullet_draw.gml</script>
+      <script>scripts\obj_bullet_init.gml</script>
+      <script>scripts\obj_bullet_step.gml</script>
+    </scripts>
+    <scripts name="enemy">
+      <script>scripts\obj_enemy_init.gml</script>
+      <script>scripts\obj_enemy_step.gml</script>
+      <script>scripts\obj_enemy_bullet_collision.gml</script>
+    </scripts>
+    <scripts name="menu">
+      <script>scripts\scr_menu_button_step.gml</script>
+      <script>scripts\scr_menu_button_init.gml</script>
+      <script>scripts\scr_menu_button_draw.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
+    <object>objects\obj_enemy</object>
+    <object>objects\obj_bullet</object>
+    <object>objects\obj_reticle</object>
     <object>objects\obj_music</object>
+    <objects name="Menu">
+      <object>objects\obj_menu</object>
+      <object>objects\obj_menu_button</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
