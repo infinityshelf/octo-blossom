@@ -1,4 +1,4 @@
-lifespan = 5 * 60 //seconds
+lifespan = 10 * 60 //seconds
 
 pickup_spread = 10;
 
