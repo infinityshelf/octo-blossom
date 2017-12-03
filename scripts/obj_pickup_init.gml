@@ -1,3 +1,5 @@
+lifespan = 5 * 60 //seconds
+
 pickup_spread = 10;
 
 friction = 0.5
