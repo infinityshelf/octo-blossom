@@ -68,3 +68,8 @@ if keyboard_check_pressed(vk_escape) {
     room_goto_next()
 }
 
+iFrame += 1
+if (iFrame > 60) {
+    image_speed = 0
+    image_index = 0
+}

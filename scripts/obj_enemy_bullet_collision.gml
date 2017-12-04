@@ -1,2 +1,5 @@
-instance_destroy(self)
+hp -= other.damage
+if (hp <= 0) {
+    instance_destroy(self)
+}
 instance_destroy(other)
