@@ -73,3 +73,6 @@ if (iFrame > 60) {
     image_speed = 0
     image_index = 0
 }
+
+if cr == 1000
+    room_goto(room_thanks)

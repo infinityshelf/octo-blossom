@@ -22,6 +22,7 @@
     <background>background\bg_stars</background>
     <background>background\bg_grid_lg</background>
     <background>background\bg_grid_md</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -70,10 +71,14 @@
       <object>objects\obj_menu</object>
       <object>objects\obj_menu_button</object>
     </objects>
+    <object>objects\obj_splash</object>
+    <object>objects\obj_thanks</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room_splash</room>
     <room>rooms\room0</room>
     <room>rooms\room_menu</room>
+    <room>rooms\room_thanks</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
