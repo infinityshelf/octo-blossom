@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1280</width>
   <height>960</height>
-  <vsnap>64</vsnap>
-  <hsnap>64</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -51,12 +51,28 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_menu" x="0" y="0" name="inst_64AC3528" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_menu_button" x="32" y="864" name="inst_669BDDB1" locked="0" code="self.button_title = &quot;&lt;&lt; PREVIOUS&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_menu_button" x="576" y="864" name="inst_EADA877F" locked="0" code="self.button_title = &quot;PURCHASE&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_menu_button" x="1120" y="864" name="inst_E9C624CA" locked="0" code="self.button_title = &quot;NEXT &gt;&gt;&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu" x="0" y="0" name="inst_64AC3528" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_button" x="32" y="32" name="inst_40F2A9B7" locked="0" code="self.button_title = &quot;BACK&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_button" x="1120" y="32" name="inst_BD843064" locked="0" code="self.button_title = &quot;EXIT GAME&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu_button" x="192" y="192" name="inst_92783E0D" locked="0" code="self.button_title = menu.upgrades[0]&#xA;image_xscale = 2" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu_button" x="960" y="192" name="inst_F027381A" locked="0" code="self.button_title = menu.upgrades[3]&#xA;image_xscale = 2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu_button" x="576" y="192" name="inst_A24CD1DD" locked="0" code="self.button_title = menu.upgrades[1]&#xA;image_xscale = 2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu_button" x="192" y="320" name="inst_8D8746B0" locked="0" code="self.button_title = menu.upgrades[3]&#xA;image_xscale = 2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu_button" x="576" y="320" name="inst_70DA2885" locked="0" code="self.button_title = menu.upgrades[4]&#xA;image_xscale = 2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu_button" x="960" y="320" name="inst_46A2034F" locked="0" code="self.button_title = menu.upgrades[5]&#xA;image_xscale = 2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu_button" x="192" y="448" name="inst_A272B71F" locked="0" code="self.button_title = menu.upgrades[6]&#xA;image_xscale = 2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu_button" x="576" y="448" name="inst_CF6D3AB2" locked="0" code="self.button_title = menu.upgrades[7]&#xA;image_xscale = 2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu_button" x="960" y="448" name="inst_51AECB66" locked="0" code="self.button_title = menu.upgrades[8]&#xA;image_xscale = 2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pickup" x="208" y="272" name="inst_BB988BBF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pickup" x="592" y="272" name="inst_0F34826B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pickup" x="976" y="272" name="inst_EAE403D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pickup" x="208" y="400" name="inst_AA9445A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pickup" x="592" y="400" name="inst_3A45464C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pickup" x="976" y="400" name="inst_C7B79ACE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pickup" x="208" y="528" name="inst_EC36E45C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pickup" x="592" y="528" name="inst_6591251C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pickup" x="976" y="528" name="inst_0972247C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pickup" x="192" y="48" name="inst_821255C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -25,7 +25,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>upgrades[0] = "Increased Rate of Fire 1"
+upgrades[1] = "Increased Rate of Fire 2"
+upgrades[2] = "Increased Rate of Fire 3"
+
+upgrades[3] = "Increased Fire Velocity 1"
+upgrades[4] = "Increased Fire Velocity 2"
+upgrades[5] = "Increased Fire Velocity 3"
+
+upgrades[6] = "Increased Shield 1"
+upgrades[7] = "Increased Shield 2"
+upgrades[8] = "Increased Shield 3"
+
+
+</string>
           </argument>
         </arguments>
       </action>
