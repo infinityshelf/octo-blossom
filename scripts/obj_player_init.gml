@@ -10,7 +10,7 @@ maxspeed = 7
 image_speed = 0
 image_index = 0
 
-shootspeed = 10
+shootspeed = 7
 should_fire = false
 press_counter = 0
 global.difficulty = cr
