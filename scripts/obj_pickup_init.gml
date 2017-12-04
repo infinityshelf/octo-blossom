@@ -1,8 +1,10 @@
 lifespan = 10 * 60 //seconds
 
-pickup_spread = 10;
+pickup_spread = 8;
 
-friction = 0.5
+maxspeed = 15
+
+friction = 0.9
 
 xspeed = random(pickup_spread)-pickup_spread/2
 yspeed = random(pickup_spread)-pickup_spread/2
