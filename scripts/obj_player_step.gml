@@ -81,5 +81,6 @@ if (iFrame > 60) {
     image_index = 0
 }
 
-if cr == 1000
+if cr >= 10000 {
     room_goto(room_thanks)
+}
