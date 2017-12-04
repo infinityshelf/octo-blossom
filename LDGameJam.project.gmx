@@ -19,6 +19,7 @@
     <sprite>sprites\spr_menu_button</sprite>
     <sprite>sprites\spr_pickup</sprite>
     <sprite>sprites\spr_small_button</sprite>
+    <sprite>sprites\spr_music</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_stars</background>
@@ -85,6 +86,7 @@
     </objects>
     <object>objects\obj_splash</object>
     <object>objects\obj_thanks</object>
+    <object>objects\obj_music_button</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_splash</room>
