@@ -5,6 +5,7 @@ xaccel = 2
 yaccel = 2
 
 maxspeed = 2
+friction = 0.9
 
 cr = 1+floor(global.difficulty/100)
 show_debug_message(string(cr))
@@ -14,3 +15,5 @@ show_debug_message(string(cr))
 // ...
 maxhp = 100 + floor(4/3 * power(global.difficulty,0.66666))
 hp = maxhp
+
+update_counter = 0
