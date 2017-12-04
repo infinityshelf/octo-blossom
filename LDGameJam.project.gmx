@@ -47,6 +47,7 @@
       <script>scripts\obj_enemy_destroy.gml</script>
       <script>scripts\obj_enemy_step.gml</script>
       <script>scripts\obj_enemy_bullet_collision.gml</script>
+      <script>scripts\obj_enemy_draw.gml</script>
     </scripts>
     <scripts name="pickup">
       <script>scripts\obj_pickup_init.gml</script>
