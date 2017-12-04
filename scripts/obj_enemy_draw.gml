@@ -1,0 +1,5 @@
+draw_sprite_ext(sprite_index, image_index,x,y,image_xscale, image_yscale, image_angle, c_white, image_alpha)
+draw_set_color(c_red)
+draw_circle(view_xview[0] + view_wview[0] - 192 + (x / 10), view_yview[0] + (y / 10), 2, true)
+draw_line_width_colour(x-16,y-32,x+16,y-32,2,c_red,c_red)
+draw_line_width_colour(x-16,y-32,x-16+(32 * (hp / maxhp)),y-32,2,c_green,c_green)
