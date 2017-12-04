@@ -7,10 +7,12 @@ yaccel = 4
 
 maxspeed = 7
 
-image_speed = 1/5
+image_speed = 0
+image_index = 0
+
 shootspeed = 10
 should_fire = false
 press_counter = 0
-global.difficulty = cr;
+global.difficulty = cr
 
-loss_counter = 0
+iFrame = 0

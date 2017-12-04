@@ -1,5 +1,5 @@
 //spawns pickups of varying value based on the decimal expansion of the currency `self` was carrying
-
+/*
 var highest = 10;
 while (cr > 0) {
     var inst = instance_create(x,y,obj_pickup);
@@ -11,4 +11,9 @@ while (cr > 0) {
     cr -= cr mod highest
     highest *= 10
     
+} */
+
+var inst = instance_create(x,y,obj_pickup);
+with(inst) {
+    value = other.cr
 }
