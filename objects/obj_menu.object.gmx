@@ -98,12 +98,13 @@
 draw_text(8, 8, "CR: " + string(global.cr))
 draw_text(8, 128 + 32, "Damage: " + string(global.damage))
 draw_text(8, 128 + 2*32, "Rate of fire (shots per second): " + string(60/(1+global.rof)))
-draw_text(8, 128 + 3*32, "Lossratio: " + string(global.lossratio))
-draw_text(8, 128 + 4*32, "DPS: " + string(60/(1+global.rof) * global.damage))
-draw_text(8, 128 + 5*32, "Magnetism: " + string(global.magnetism))
-draw_text(8, 128 + 6*32, "Bullet speed: " + string(global.bullet_speed))
-draw_text(8, 128 + 7*32, "Difficulty: " + string(global.difficulty))
-draw_text(8, 128 + 8*32, "Invuln time: " + string(global.invuln_time))
+draw_text(8, 128 + 3*32, "Piercing power: " + string(global.piercing))
+draw_text(8, 128 + 4*32, "DPS: " + string(60/(1+global.rof) * global.damage * global.piercing))
+draw_text(8, 128 + 5*32, "Lossratio: " + string(global.lossratio))
+draw_text(8, 128 + 6*32, "Magnetism: " + string(global.magnetism))
+draw_text(8, 128 + 7*32, "Bullet speed: " + string(global.bullet_speed))
+draw_text(8, 128 + 8*32, "Difficulty: " + string(global.difficulty))
+draw_text(8, 128 + 9*32, "Invuln time: " + string(global.invuln_time))
 </string>
           </argument>
         </arguments>
