@@ -11,7 +11,7 @@ image_speed = 0
 image_index = 0
 
 global.purchased = false;
-
+global.inaccuracy = degtorad(20);
 global.rof = 10
 global.damage = 70
 global.lossratio = 0.95

@@ -63,6 +63,7 @@
       <script>scripts\scr_menu_button_draw.gml</script>
     </scripts>
     <script>scripts\scr_rof_increase.gml</script>
+    <script>scripts\scr_damage_increase.gml</script>
     <script>scripts\scr_firevel_increase.gml</script>
     <script>scripts\scr_magnet_increase.gml</script>
     <script>scripts\scr_null.gml</script>

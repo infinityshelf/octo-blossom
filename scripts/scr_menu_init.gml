@@ -41,3 +41,11 @@ with (inst) {
     xoffset = 8
     yoffset = 32
 }
+upgrades[3] = "Increased Damage"
+inst = instance_create(128 + 3*8*32,128,obj_menu_button_square);
+with (inst) {
+    button_title = other.upgrades[3]
+    func = scr_damage_increase
+    xoffset = 8
+    yoffset = 32
+}
