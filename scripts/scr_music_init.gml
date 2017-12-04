@@ -1,3 +1,4 @@
+global.music_on = true
 snd0 = audio_play_sound(sound_theme_0,100,true)
 snd1 = audio_play_sound(sound_theme_1,100,true)
 snd2 = audio_play_sound(sound_theme_2,100,true)
