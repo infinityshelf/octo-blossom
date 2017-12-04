@@ -5,16 +5,9 @@ if mouse_x > x and mouse_x < x+sprite_width and mouse_y > y and mouse_y < y+spri
     if image_index == 1 and mouse_check_button_released(mb_left) {
         image_index = 0
         //clicked
-        if self.button_title == "BACK" {
-            room_goto_previous()
-        }
-        
-        if self.button_title == "PURCHASE" {
-            //
-        }
-        
-        if self.button_title == "EXIT GAME" {
-            game_end()
+        var retval = script_execute(func);
+        if retval == 1 {
+            global.purchased = true;
         }
     }
 } else {
