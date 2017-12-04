@@ -24,4 +24,3 @@ global.invuln_time = 1*60
 
 iFrame = 0
 
-
