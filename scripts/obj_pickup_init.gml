@@ -9,6 +9,8 @@ friction = 0.9
 xspeed = random(pickup_spread)-pickup_spread/2
 yspeed = random(pickup_spread)-pickup_spread/2
 
+magdistance = 300
+
 update_counter = 0
 
 value = 1

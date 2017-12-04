@@ -1,3 +1,4 @@
+
 var up = keyboard_check(vk_up) or keyboard_check(ord("W"));
 var left = keyboard_check(vk_left) or keyboard_check(ord("A"));
 var down = keyboard_check(vk_down) or keyboard_check(ord("S"));
@@ -37,7 +38,7 @@ if (mouse_check_button_pressed(mb_left)) {
 
 // if mouse is held, attempt to shoot. gun may still be on cooldown, but the cooldown should expire after some time
 if (mouse_check_button(mb_left) or should_fire) {
-    if ((press_counter % shootspeed) == 0) {
+    if (press_counter > global.rof) {
         press_counter = 0
         var inst = instance_create(x,y,obj_bullet);
         with (inst) {
@@ -51,7 +52,7 @@ if (mouse_check_button(mb_left) or should_fire) {
 } else if (press_counter != 0) {
     // mouse not held, and press counter isnt 0
     press_counter += 1
-    if ((press_counter % shootspeed) == 0) {
+    if (press_counter > global.rof) {
         press_counter = 0
         /*var inst = instance_create(x,y,obj_bullet);
         with (inst) {
@@ -62,6 +63,12 @@ if (mouse_check_button(mb_left) or should_fire) {
     }
 }
 
+if global.purchased {
+    cr = global.cr
+    global.purchased = false
+}else{
+    global.cr = cr
+}
 global.difficulty = cr;
 
 if keyboard_check_pressed(vk_escape) {
@@ -74,5 +81,6 @@ if (iFrame > 60) {
     image_index = 0
 }
 
-if cr == 1000
+if cr >= 10000 {
     room_goto(room_thanks)
+}

@@ -3,6 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="2" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\sound_theme_0</sound>
@@ -17,6 +18,7 @@
     <sprite>sprites\spr_reticle</sprite>
     <sprite>sprites\spr_menu_button</sprite>
     <sprite>sprites\spr_pickup</sprite>
+    <sprite>sprites\spr_small_button</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_stars</background>
@@ -36,8 +38,8 @@
       <script>scripts\obj_player_pickup_collision.gml</script>
     </scripts>
     <scripts name="bullet">
-      <script>scripts\obj_bullet_draw.gml</script>
       <script>scripts\obj_bullet_init.gml</script>
+      <script>scripts\obj_bullet_draw.gml</script>
       <script>scripts\obj_bullet_step.gml</script>
     </scripts>
     <scripts name="enemy">
@@ -54,10 +56,17 @@
     <script>scripts\obj_enemy_spawner_step.gml</script>
     <script>scripts\obj_enemy_spawner_init.gml</script>
     <scripts name="menu">
-      <script>scripts\scr_menu_button_step.gml</script>
+      <script>scripts\scr_menu_init.gml</script>
       <script>scripts\scr_menu_button_init.gml</script>
+      <script>scripts\scr_menu_button_step.gml</script>
       <script>scripts\scr_menu_button_draw.gml</script>
     </scripts>
+    <script>scripts\scr_rof_increase.gml</script>
+    <script>scripts\scr_firevel_increase.gml</script>
+    <script>scripts\scr_magnet_increase.gml</script>
+    <script>scripts\scr_null.gml</script>
+    <script>scripts\scr_game_end.gml</script>
+    <script>scripts\scr_back.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -69,7 +78,8 @@
     <object>objects\obj_music</object>
     <objects name="Menu">
       <object>objects\obj_menu</object>
-      <object>objects\obj_menu_button</object>
+      <object>objects\obj_menu_button_square</object>
+      <object>objects\obj_menu_button_large</object>
     </objects>
     <object>objects\obj_splash</object>
     <object>objects\obj_thanks</object>

@@ -1,2 +1,2 @@
-maxspeed = 15
-damage = 70
+maxspeed = global.bullet_speed
+damage = global.damage

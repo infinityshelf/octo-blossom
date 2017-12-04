@@ -3,7 +3,7 @@ if (update_counter >= 2) {
     update_counter = 0
     // do update
 
-    if (point_distance(x,y,obj_player.x,obj_player.y) < 300) {
+    if (point_distance(x,y,obj_player.x,obj_player.y) < global.magnetism) {
         dir = -degtorad(point_direction(x,y,obj_player.x,obj_player.y))
         xspeed = cos(dir) * maxspeed
         yspeed = sin(dir) * maxspeed
