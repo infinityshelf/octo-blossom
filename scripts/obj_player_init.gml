@@ -16,3 +16,7 @@ press_counter = 0
 global.difficulty = cr
 
 iFrame = 0
+
+rof = 0
+fire_velocity = 0
+shield = 0

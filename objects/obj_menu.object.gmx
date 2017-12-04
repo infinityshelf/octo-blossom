@@ -37,7 +37,17 @@ upgrades[6] = "Increased Shield 1"
 upgrades[7] = "Increased Shield 2"
 upgrades[8] = "Increased Shield 3"
 
+costs[0] = 50
+costs[3] = 50
+costs[6] = 50
 
+costs[1] = 100
+costs[4] = 100
+costs[7] = 100
+
+costs[2] = 150
+costs[5] = 150
+costs[8] = 150
 </string>
           </argument>
         </arguments>
