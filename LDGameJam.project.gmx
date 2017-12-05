@@ -80,6 +80,7 @@
     <object>objects\obj_bullet</object>
     <object>objects\obj_pickup</object>
     <object>objects\obj_enemy_spawner</object>
+    <object>objects\obj_splash</object>
     <object>objects\obj_reticle</object>
     <object>objects\obj_music</object>
     <objects name="Menu">
@@ -87,7 +88,6 @@
       <object>objects\obj_menu_button_square</object>
       <object>objects\obj_menu_button_large</object>
     </objects>
-    <object>objects\obj_splash</object>
     <object>objects\obj_thanks</object>
     <object>objects\obj_music_button</object>
   </objects>
