@@ -12,10 +12,13 @@ image_index = 0
 
 global.purchased = false;
 global.inaccuracy = degtorad(20);
-global.rof = 10
-global.damage = 70
+global.piercing = 4
+//rof is in frames of cooldown
+//true rof is 60/(rof + 1) = 6 shots per second at rof=9
+global.rof = 9
+global.damage = 20
 global.lossratio = 0.95
-global.magnetism = 0
+global.magnetism = 40
 global.bullet_speed = 10
 should_fire = false
 press_counter = 0

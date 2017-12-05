@@ -63,10 +63,13 @@
       <script>scripts\scr_menu_button_step.gml</script>
       <script>scripts\scr_menu_button_draw.gml</script>
     </scripts>
-    <script>scripts\scr_rof_increase.gml</script>
-    <script>scripts\scr_damage_increase.gml</script>
-    <script>scripts\scr_firevel_increase.gml</script>
-    <script>scripts\scr_magnet_increase.gml</script>
+    <scripts name="upgrade_scripts">
+      <script>scripts\scr_damage_increase.gml</script>
+      <script>scripts\scr_rof_increase.gml</script>
+      <script>scripts\scr_firevel_increase.gml</script>
+      <script>scripts\scr_magnet_increase.gml</script>
+      <script>scripts\scr_bullet_pierce_increase.gml</script>
+    </scripts>
     <script>scripts\scr_null.gml</script>
     <script>scripts\scr_game_end.gml</script>
     <script>scripts\scr_back.gml</script>
