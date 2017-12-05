@@ -8,29 +8,6 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_set_font(font1)
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="6" enumb="53">
       <action>
         <libid>1</libid>
@@ -52,20 +29,6 @@
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
     </event>
     <event eventtype="8" enumb="0">
       <action>
@@ -84,9 +47,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//font_add(font0,12,false,false,0,0)
-draw_text(16, (960-(16 * 5)), "WASD to move, ESC to pause/open menu, LMB to shoot#Made by Estevan and Gillett Hernandez#For Ludum Dare 40")
-
+            <string>draw_set_font(font1)
+draw_set_color(c_white)
+draw_text(16, 16, "WASD to move, ESC to pause/open menu, LMB to shoot#Made by Estevan and Gillett Hernandez#For Ludum Dare 40")
 </string>
           </argument>
         </arguments>
@@ -112,20 +75,6 @@ draw_text(16, (960-(16 * 5)), "WASD to move, ESC to pause/open menu, LMB to shoo
             <room>room0</room>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
   </events>
