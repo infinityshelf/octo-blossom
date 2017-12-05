@@ -16,4 +16,6 @@ while (cr > 0) {
 var inst = instance_create(x,y,obj_pickup);
 with(inst) {
     value = other.cr
+    image_xscale = 1.5/99*value + 0.5
+    image_yscale = 1.5/99*value + 0.5
 }

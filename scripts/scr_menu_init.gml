@@ -1,6 +1,6 @@
 global.cost_scale = 20;
 if not variable_global_exists("counters") {
-    global.counters = ds_map_create();
+    global.counters[0] = 0;
 }
 var inst;
 
@@ -30,8 +30,8 @@ inst = instance_create(upgrade_xoffset, upgrade_yoffset + counter*spacing*32,obj
 with (inst) {
     has_cost = true
     ID = counter
-    if !ds_map_exists(global.counters, ID) {
-        global.counters[? ID] = 0
+    if array_length_1d(global.counters) < ID {
+        global.counters[ID] = 0
     }
     button_title = other.upgrades[0]
     func = scr_rof_increase
@@ -44,8 +44,8 @@ inst = instance_create(upgrade_xoffset, upgrade_yoffset + counter*spacing*32,obj
 with (inst) {
     has_cost = true
     ID = counter
-    if !ds_map_exists(global.counters, ID) {
-        global.counters[? ID] = 0
+    if array_length_1d(global.counters) < ID {
+        global.counters[ID] = 0
     }
     button_title = other.upgrades[1]
     func = scr_firevel_increase
@@ -58,8 +58,8 @@ inst = instance_create(upgrade_xoffset, upgrade_yoffset + counter*spacing*32,obj
 with (inst) {
     has_cost = true
     ID = counter
-    if !ds_map_exists(global.counters, ID) {
-        global.counters[? ID] = 0
+    if array_length_1d(global.counters) < ID {
+        global.counters[ID] = 0
     }
     button_title = other.upgrades[2]
     func = scr_magnet_increase
@@ -72,8 +72,8 @@ inst = instance_create(upgrade_xoffset, upgrade_yoffset + counter*spacing*32,obj
 with (inst) {
     has_cost = true
     ID = counter
-    if !ds_map_exists(global.counters, ID) {
-        global.counters[? ID] = 0
+    if array_length_1d(global.counters) < ID {
+        global.counters[ID] = 0
     }
     button_title = other.upgrades[3]
     func = scr_damage_increase
@@ -86,8 +86,8 @@ inst = instance_create(upgrade_xoffset, upgrade_yoffset + counter*spacing*32,obj
 with (inst) {
     has_cost = true
     ID = counter
-    if !ds_map_exists(global.counters, ID) {
-        global.counters[? ID] = 0
+    if array_length_1d(global.counters) < ID {
+        global.counters[ID] = 0
     }
     button_title = other.upgrades[4]
     func = scr_bullet_pierce_increase

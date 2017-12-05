@@ -1,6 +1,6 @@
 lifespan = 10 * 60 //seconds
 
-pickup_spread = 8;
+pickup_spread = 6;
 
 maxspeed = 15
 

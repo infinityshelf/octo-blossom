@@ -8,7 +8,7 @@ if mouse_x > x and mouse_x < x+sprite_width and mouse_y > y and mouse_y < y+spri
         var retval = script_execute(func);
         if retval == 1 {
             global.purchased = true;
-            global.counters[? ID] += 1
+            global.counters[ID] += 1
         }
     }
 } else {
@@ -16,5 +16,5 @@ if mouse_x > x and mouse_x < x+sprite_width and mouse_y > y and mouse_y < y+spri
 }
 if has_cost {
     show_debug_message(string(ID));
-    price = (1+global.counters[? ID]) * global.cost_scale;
+    price = (1+global.counters[ID]) * global.cost_scale;
 }
