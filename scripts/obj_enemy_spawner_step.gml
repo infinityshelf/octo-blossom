@@ -1,5 +1,5 @@
 current_spawn_speed = max(ceil(global.spawn_multiplier/global.difficulty),1)
-current_spawn_limit = ceil(global.difficulty/10)
+current_spawn_limit = ceil(global.difficulty)
 
 
 if (current_counter >= current_spawn_speed and instance_number(obj_enemy) < current_spawn_limit and instance_number(obj_enemy) < global.maxmaxmax) {

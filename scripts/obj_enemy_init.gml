@@ -15,6 +15,7 @@ show_debug_message(string(cr))
 // im all about those curves
 // ...
 maxhp = 100 + floor(4/3 * power(global.difficulty,0.66666))
+global.maxhp = maxhp
 hp = maxhp
 
 update_counter = 0
