@@ -8,7 +8,7 @@ maxspeed = 3
 maxaccel = 2
 friction = 0.9
 
-cr = 1+floor(global.difficulty/100)
+cr = 1+floor(global.difficulty/10)
 show_debug_message(string(cr))
 
 // idk i just felt like 100 + 4/3 * d**2/3 would be an interesting hp curve

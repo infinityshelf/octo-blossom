@@ -1,4 +1,4 @@
-cr = 1000
+cr = 100
 xspeed = 0
 yspeed = 0
 
@@ -22,7 +22,7 @@ global.magnetism = 40
 global.bullet_speed = 10
 should_fire = false
 press_counter = 0
-global.difficulty = cr
+global.difficulty = cr/10
 global.invuln_time = 1*60
 
 iFrame = 0

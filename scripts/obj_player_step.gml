@@ -70,7 +70,7 @@ if global.purchased {
 }else{
     global.cr = cr
 }
-global.difficulty = cr;
+global.difficulty = cr/10;
 
 if keyboard_check_pressed(vk_escape) {
     room_goto_next()
