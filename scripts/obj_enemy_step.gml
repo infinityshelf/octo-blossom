@@ -5,10 +5,17 @@ if (update_counter >= 2) {
     if (point_distance(x,y,obj_player.x,obj_player.y) > 3) {
         dir = -degtorad(point_direction(x,y,obj_player.x,obj_player.y))
 
-        xspeed = cos(dir) * maxspeed
-        yspeed = sin(dir) * maxspeed
+        xaccel = cos(dir) * maxaccel
+        yaccel = sin(dir) * maxaccel
     }
-
+    
+    xspeed += xaccel
+    yspeed += yaccel
+    var dot = sqrt(dot_product(xspeed,yspeed,xspeed,yspeed))
+    if (dot > maxspeed) {
+        xspeed *= maxspeed/dot
+        yspeed *= maxspeed/dot
+    }
     xspeed *= friction
     yspeed *= friction
 } else {

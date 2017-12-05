@@ -4,7 +4,8 @@ yspeed = 0
 xaccel = 2
 yaccel = 2
 
-maxspeed = 2
+maxspeed = 3
+maxaccel = 2
 friction = 0.9
 
 cr = 1+floor(global.difficulty/100)
