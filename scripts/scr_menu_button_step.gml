@@ -15,6 +15,7 @@ if mouse_x > x and mouse_x < x+sprite_width and mouse_y > y and mouse_y < y+spri
     image_index = 0
 }
 if has_cost {
-    show_debug_message(string(ID));
+    show_debug_message("counters for " + string(ID) + " is " + string(global.counters[ID]));
+    show_debug_message("cost scale is " + string(global.cost_scale));
     price = (1+global.counters[ID]) * global.cost_scale;
 }
