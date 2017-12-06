@@ -1,7 +1,4 @@
 global.cost_scale = 20;
-if not variable_global_exists("counters") {
-    global.counters[0] = 0;
-}
 var inst;
 
 inst = instance_create(32,32,obj_menu_button_large)
@@ -30,9 +27,6 @@ inst = instance_create(upgrade_xoffset, upgrade_yoffset + counter*spacing*32,obj
 with (inst) {
     has_cost = true
     ID = counter
-    if array_length_1d(global.counters) < ID {
-        global.counters[ID] = 0
-    }
     button_title = other.upgrades[0]
     func = scr_rof_increase
     xoffset = 8
@@ -44,9 +38,6 @@ inst = instance_create(upgrade_xoffset, upgrade_yoffset + counter*spacing*32,obj
 with (inst) {
     has_cost = true
     ID = counter
-    if array_length_1d(global.counters) < ID {
-        global.counters[ID] = 0
-    }
     button_title = other.upgrades[1]
     func = scr_firevel_increase
     xoffset = 8
@@ -58,9 +49,6 @@ inst = instance_create(upgrade_xoffset, upgrade_yoffset + counter*spacing*32,obj
 with (inst) {
     has_cost = true
     ID = counter
-    if array_length_1d(global.counters) < ID {
-        global.counters[ID] = 0
-    }
     button_title = other.upgrades[2]
     func = scr_magnet_increase
     xoffset = 8
@@ -72,9 +60,6 @@ inst = instance_create(upgrade_xoffset, upgrade_yoffset + counter*spacing*32,obj
 with (inst) {
     has_cost = true
     ID = counter
-    if array_length_1d(global.counters) < ID {
-        global.counters[ID] = 0
-    }
     button_title = other.upgrades[3]
     func = scr_damage_increase
     xoffset = 8
@@ -86,9 +71,6 @@ inst = instance_create(upgrade_xoffset, upgrade_yoffset + counter*spacing*32,obj
 with (inst) {
     has_cost = true
     ID = counter
-    if array_length_1d(global.counters) < ID {
-        global.counters[ID] = 0
-    }
     button_title = other.upgrades[4]
     func = scr_bullet_pierce_increase
     xoffset = 8

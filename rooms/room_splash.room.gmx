@@ -10,7 +10,22 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>global.purchased = false;
+global.inaccuracy = degtorad(20);
+global.piercing = 4
+global.rof = 9
+global.damage = 20
+global.lossratio = 0.95
+global.magnetism = 40
+global.bullet_speed = 10
+global.cr = 100
+global.difficulty = global.cr/10
+global.invuln_time = 1*60
+global.counters[0] = 0;
+global.counters[1] = 0;
+global.counters[2] = 0;
+global.counters[3] = 0;
+global.counters[4] = 0;</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
